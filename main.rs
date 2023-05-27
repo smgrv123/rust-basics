@@ -1,12 +1,10 @@
-fn main (){
-    let mut message = "Hello world";
-    println!("The print text is-{}",message);
-    message = "second print";
-    println!("The print text is-{}",message);
+fn main() {
+    let message = "Hello world";
+    let return_message = print_welcome(message);
+    println!("{}", return_message);
+}
 
-    let age = 21;
-    println!("{}", age);
-    let age = 20;
-    println!("{}", age);
-
+fn print_welcome(text: &str) -> &str {
+    println!("{}", text);
+    return "Yello";
 }
